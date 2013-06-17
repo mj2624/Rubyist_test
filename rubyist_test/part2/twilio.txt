@@ -1,0 +1,5 @@
+ curl -X POST https://api.twilio.com/2010-04-01/Accounts/ACad64e0cb60fc8b382e0723bc378707a0/SMS/Messages.json \
+    -u ACad64e0cb60fc8b382e0723bc378707a0:313d69c3a16b99e4a9d185fcb9dd6764 \
+    -d "From=+441183100477" \
+    -d "To=+447970261478" \
+    -d 'Body=Twilio Test'
