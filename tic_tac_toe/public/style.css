@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'arial';
+  src: url("arial.ttf") format("truetype");
+}
+
+body {
+  font-family: 'arial';
+}
+
+.maincontent {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.flashspace {
+  height: 45px;
+}
+
+#flash {
+  text-align: center;
+  font-size: 1.8em;
+  color: red;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.board {
+  width: 475px;
+  height: 475px;
+  margin: 0 auto;
+}
+
+table
+{
+  border-collapse:collapse;
+  border: 4px solid #747D7D;
+  margin: 0 auto;
+}
+
+td:nth-of-type(3n+3)  {
+ border-right: 4px solid #747D7D;
+}
+
+tr:nth-of-type(3n+3)  {
+ border-bottom: 4px solid #747D7D;
+}
+
+td input {
+  border: 1px solid gray;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+input.wrong {
+  background-color: #FF6666;
+}
+
+input[value=""] {
+  background-color: transparent;
+}
+
+input[readonly] {
+  background-color: #D3D3D3;
+}
+
+.buttons {
+  margin-top: 15px;
+  text-align: center;
+}
+
+button {
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid #747D7D;
+  background: -webkit-linear-gradient(top, white, #747d7d);
+  font-size: 1.2em;
+  font-family: 'arial';
+ }
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+button a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.cell :focus {
+  background:#99ccff; 
+  border:1px solid #b80b38;
+}
