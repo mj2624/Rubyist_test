@@ -1,0 +1,26 @@
+<h1>TicTacToe</h1>
+
+<div class="flashspace">
+  <%= styled_flash %>
+</div>  
+<form action="/" method="post">
+  <div class="board">
+    <table cellspacing="0">
+      <tbody>
+        <tr>
+          <% @game.board.flatten.each do |cell| %>
+            <input type='text' name="cells[]" maxlength="1" onClick="this.select();" title="Please enter an X or a 0" pattern="[X]|[0]" class="cells" value="<%= cell %>  />
+            </td>
+          <% end %>
+        </tr>
+      </tbody>
+    </table>
+    <div class="buttons">
+      <button type="submit">Check</button>
+    </div>
+  </div>
+</form>
+
+
+
+
